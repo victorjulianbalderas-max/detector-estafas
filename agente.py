@@ -61,7 +61,7 @@ Veredicto: {veredicto}
 Características detectadas: {json.dumps(caracteristicas, ensure_ascii=False)}
 
 Explica en español, en máximo 4 frases cortas, por qué se llegó a ese veredicto y qué debería hacer el usuario.
-Usa solo los datos de arriba y no inventes información sobre la página. Aclara que el análisis se basó únicamente en la dirección."""
+Usa solo los datos de arriba. No menciones la antigüedad del dominio, su reputación, el contenido de la página ni nada que no aparezca en los datos. Una URL corta no es una señal de peligro por sí sola. Aclara que el análisis se basó únicamente en la dirección."""
 
     respuesta = llm.chat(messages=[{"role": "user", "content": prompt}],
                          params={"max_tokens": 300})

@@ -6,3 +6,4 @@ beautifulsoup4
 python-whois
 tldextract
 ibm-watsonx-ai
+flask
